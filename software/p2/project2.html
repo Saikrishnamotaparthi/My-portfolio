@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGAP | Sai Krishna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <!-- Terminal-style top panel -->
+  <header class="terminal-panel">
+    <div class="terminal-prompt">
+      <span class="prompt-host">Home</span><span class="prompt-path">~/My-Portfolio</span>
+    </div>
+    <nav class="terminal-nav">
+  <a href="../../index.html#about">About</a>
+  <a href="../../index.html#projects">Projects</a>
+  <a href="../../index.html#experience">Experience</a>
+  <a href="../../index.html#positions">Positions</a>
+  <a href="../../index.html#accomplishments">Accomplishments</a>
+  <a href="../../index.html#contact">Contact</a>
+</nav>
+
+    <!-- In projects.html, find and replace this block -->
+<div class="terminal-info">
+  <span class="terminal-time"></span> <!-- REMOVED the old ID -->
+  <a href="../../assets/resume.pdf" download class="download-icon" title="Download Resume">
+    <i class="fas fa-download"></i>
+  </a>
+</div>
+  </header>
+
+  <!-- NEW: Mobile Header -->
+  <div class="mobile-header">
+    <div class="mobile-header-left">
+      ~/My-Portfolio
+    </div>
+    <div class="mobile-header-right">
+      <!-- In the mobile header of projects.html -->
+<span class="terminal-time"></span> <!-- REMOVED the old ID -->
+      <a href="../../assets/resume.pdf" download class="download-icon" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- NEW: Mobile Navigation Menu -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#projects">Projects</a></li>
+      <li><a href="../../index.html#experience">Experience</a></li>
+      <li><a href="../../index.html#positions">Positions</a></li>
+      <li><a href="../../index.html#accomplishments">Accomplishments</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Navigation Menu for this page -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../projects.html">All Projects</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="theme-toggle"><button id="theme-btn">🌙</button></div>
+
+  <!-- ... Rest of your main content for project1.html ... -->
+  <main class="container" style="padding-top: 40px;">
+  <div class="project-detail-hero">
+  <h1>Automatic Gate Unlocking System</h1>
+  <div class="tech-stack">
+    <span class="tech-chip">Python</span>
+    <span class="tech-chip">OpenCV</span>
+    <span class="tech-chip">Tesseract OCR</span>
+    <span class="tech-chip">Haar Cascade</span>
+  </div>
+</div>
+
+<div class="project-detail-layout">
+  <aside class="project-sidebar">
+    <div class="glass-card">
+      <h4><i class="fas fa-info-circle"></i> Project Info</h4>
+      <ul>
+        <li><i class="fas fa-cogs"></i><strong>Tech Stack:</strong> Python, OpenCV, Tesseract OCR</li>
+        <li><i class="fas fa-laptop-code"></i><strong>Function:</strong> Smart Gate Automation</li>
+        <li><i class="fas fa-user"></i><strong>Category:</strong> Computer Vision, Security</li>
+      </ul>
+      <br>
+      <h4><i class="fas fa-link"></i> Project Links</h4>
+      <ul>
+        <li><a href="https://github.com/Saikrishnamotaparthi/Automatic-Gate-Unlocking-System" class="certification-link" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <div class="project-main-content">
+    <div class="glass-card">
+      <h3><i class="fas fa-binoculars"></i> Overview</h3>
+      <p>This Python-based system uses OpenCV and Tesseract OCR to detect and recognize car number plates in real-time. If the recognized number matches an entry in the authorized list, the gate is automatically unlocked. Ideal for smart parking, residential automation, and security systems.</p>
+      
+      <ul>
+        <li>🔍 Real-time vehicle license plate detection via webcam</li>
+        <li>🧠 OCR-based number recognition using Tesseract</li>
+        <li>✅ Matches with authorized plates</li>
+        <li>🔓 Simulated gate unlock/lock mechanism</li>
+        <li>💾 Captures and saves plate images for logging</li>
+        <li>📁 Modular code design with expandability</li>
+      </ul>
+
+      <div class="project-gallery">
+        <img src="p21.png" alt="System Detecting Plate">
+        <img src="p22.png" alt="Plate Match Access Granted">
+      </div>
+    </div>
+
+    <div class="glass-card" style="margin-top: 30px;">
+      <h3><i class="fas fa-chart-line"></i> Future Improvements</h3>
+      <ul>
+        <li>🖥️ GUI using Tkinter or PyQt</li>
+        <li>🤖 Deep learning model (YOLO or EasyOCR) for better accuracy</li>
+        <li>🔌 Integration with Raspberry Pi/Arduino for hardware gate control</li>
+        <li>🗃️ CSV logging of access events</li>
+        <li>📱 Admin mobile app for managing access</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+      <div class="project-actions">
+        <a href="../../projects.html" class="resume-btn secondary">
+          <i class="fas fa-arrow-left btn-icon"></i> Back to All Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+  
+  <footer>
+    <p>© 2025 Sai Krishna Motaparthi | Built with passion & code.</p>
+  </footer>
+
+  <!-- Link to the correct script for sub-pages -->
+  <script src="../../js/projects.js"></script>
+</body>
+</html>

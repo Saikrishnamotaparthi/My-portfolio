@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Projects | Sai Krishna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Terminal-style top panel -->
+  <header class="terminal-panel">
+    <div class="terminal-prompt">
+      <span class="prompt-host">Home</span><span class="prompt-path">~/My-Portfolio</span>
+    </div>
+    <nav class="terminal-nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#positions">Positions</a>
+      <a href="index.html#accomplishments">Accomplishments</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <!-- In projects.html, find and replace this block -->
+<div class="terminal-info">
+  <span class="terminal-time"></span> <!-- REMOVED the old ID -->
+  <a href="assets/resume.pdf" download class="download-icon" title="Download Resume">
+    <i class="fas fa-download"></i>
+  </a>
+</div>
+  </header>
+
+  <!-- NEW: Mobile Header -->
+  <div class="mobile-header">
+    <div class="mobile-header-left">
+      ~/My-Portfolio
+    </div>
+    <div class="mobile-header-right">
+      <!-- In the mobile header of projects.html -->
+<span class="terminal-time"></span> <!-- REMOVED the old ID -->
+      <a href="assets/resume.pdf" download class="download-icon" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- NEW: Mobile Navigation Menu -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#positions">Positions</a></li>
+      <li><a href="index.html#accomplishments">Accomplishments</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  
+  <main class="container" style="padding-top: 40px;">
+    <a href="index.html" class="back-btn">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    
+    <section>
+      <h2><i class="fas fa-drafting-compass" style="margin-right: 15px;"></i>All My Projects</h2>
+      
+      <div class="project-toggle-container">
+        <div class="project-toggle">
+          <button class="toggle-option active" data-type="hardware"><i class="fas fa-microchip"></i><span>Hardware</span></button>
+          <button class="toggle-option" data-type="software"><i class="fas fa-code"></i><span>Software</span></button>
+        </div>
+      </div>
+      
+      <div class="project-grid hardware-projects">
+        <!-- Hardware project cards go here... -->
+        <div class="project-card">
+          <img src="hardware/p1/doorlock.png" alt="RFID Lock">
+          <div class="project-content">
+            <h3>RFID Door Lock</h3>
+            <p class="project-description">Secure access control system with real-time logging and microcontroller integration.</p>
+            <a href="hardware/p1/project1.html" class="view-details">View Details</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="hardware/p2/P22.jpg" alt="Safety Box">
+          <div class="project-content">
+            <h3>Pick & Place Bot</h3>
+            <p class="project-description">Built an robotic vechile with robotic arm for object detection, gripping, and placement tasks.</p>
+            <a href="hardware/p2/project2.html" class="view-details">View Details</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="hardware/p3/sub.png" alt="Pick & Place Bot">
+          <div class="project-content">
+            <h3>AI-Powered Submarine</h3>
+            <p class="project-description">Designing an underwater robot that autonomously monitor with AI</p>
+            <a href="#" class="experience-certificate"><i class="fas fa-spinner fa-spin"></i> Ongoing</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-grid software-projects" style="display: none;">
+        <!-- Software project cards go here... -->
+        <div class="project-card">
+          <img src="software/p1/p11.png" alt="E-commerce App">
+          <div class="project-content">
+            <h3>My Portfolio</h3>
+            <p class="project-description">I have developed my personal portfolio website in collaboration with Ai to showcase my projects, experience, and achievements in a professional and creative way.</p>
+            <a href="software/p1/project1.html" class="view-details">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="software/p2/p21.png" alt="E-commerce App">
+          <div class="project-content">
+            <h3>Automatic Gate Unlocking System using Car Number Plate Recognition</h3>
+            <p class="project-description">This Python-based system uses OpenCV and Tesseract OCR to detect and recognize license plates of vehicles in real-time.</p>
+            <a href="software/p2/project2.html" class="view-details">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="software/p3/p31.png" alt="E-commerce App">
+          <div class="project-content">
+            <h3>Library Management System in R</h3>
+            <p class="project-description">This is a simple Library Management System implemented in R that allows you to manage students, books, and checkouts.</p>
+            <a href="software/p3/project3.html" class="view-details">View Details</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sai Krishna Motaparthi | Built with passion & code.</p>
+  </footer>
+
+  <!--
+    THE FIX: This page now links to its own, dedicated javascript file.
+  -->
+  <script src="js/projects.js"></script>
+</body>
+</html>

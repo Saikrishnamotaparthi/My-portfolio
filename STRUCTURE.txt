@@ -1,0 +1,15 @@
+portfolio/
+├── index.html
+├── project1.html
+├── projects.html
+└── assets/
+    ├── profile.jpg
+    ├── resume.pdf
+    ├── reports/
+    │   ├── doorlock-report.pdf
+    │   ├── safetybox-report.pdf
+    │   └── bot-report.pdf
+    └── projects/
+        ├── doorlock.jpg
+        ├── safetybox.jpg
+        └── bot.jpg

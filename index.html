@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Krishna | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Terminal-style top panel -->
+  <header class="terminal-panel">
+    <div class="terminal-prompt">
+      <span class="prompt-host">Home</span><span class="prompt-path">~/My-Portfolio</span>
+    </div>
+    <nav class="terminal-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#positions">Positions</a>
+      <a href="#accomplishments">Accomplishments</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  <!-- In index.html, find and replace this block -->
+<div class="terminal-info">
+  <span class="terminal-time"></span> <!-- REMOVED the old ID -->
+  <a href="assets/resume.pdf" download class="download-icon" title="Download Resume">
+    <i class="fas fa-download"></i>
+  </a>
+</div>
+  </header>
+
+  <!-- NEW: Mobile Header -->
+  <div class="mobile-header">
+    <div class="mobile-header-left">
+      ~/My-Portfolio
+    </div>
+    <div class="mobile-header-right">
+      <!-- In the mobile header of index.html -->
+<span class="terminal-time"></span> <!-- REMOVED the old ID -->
+      <a href="assets/resume.pdf" download class="download-icon" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- NEW: Mobile Navigation Menu -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#positions">Positions</a></li>
+      <li><a href="#accomplishments">Accomplishments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Other UI elements -->
+  <div class="theme-toggle"><button id="theme-btn">🌙</button></div>
+  <div class="scroll-down-container" id="scrollDownContainer">
+    <div class="scroll-down-text">Scroll Down</div>
+    <div class="scroll-down-btn" id="scrollDownBtn"><i class="fas fa-chevron-down"></i></div>
+  </div>
+
+  <div class="hero">
+    <img src="assets/profile.jpg" alt="Sai Krishna" class="profile-img">
+    <h1>Hi, I'm</h1>
+    <h1 class="name">Sai Krishna Motaparthi</h1>
+    <div class="typed-text">I am a <span id="typed"></span></div>
+    <a href="assets/resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+  </div>
+
+  <main>
+    <!-- About Section (Unchanged) -->
+    <section id="about" class="fade-in-section">
+       <h2><i class="fas fa-user-astronaut" style="margin-right: 15px;"></i>About Me</h2>
+      <p class="about-intro">Aspiring VLSI Engineer | B.Tech ECE @ GITAM Hyderabad | President - G-Electra | R&D Intern @ SPCRC, IIITH | Innovation & Entrepreneurship Enthusiast</p>
+      
+      <div class="about-container">
+        <!-- Who Am I? -->
+        <div class="about-block">
+          <h3><i class="fas fa-user"></i> Who Am I?</h3>
+          <p style="text-align: justify;">
+            I am an Electronics and Communication Engineering student with experience in VLSI design, embedded systems, and robotics. Seeking an entry-level position to apply technical knowledge and problem-solving skills gained from leading multidisciplinary projects. Committed to delivering innovative solutions in the Core and IT industries. Eager to foster professional growth and technical excellence.
+          </p>
+        </div>
+        
+        <!-- Education -->
+        <div class="about-block">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="education-item">
+            <div class="education-degree">B.Tech in ECE (VLSI Specialization)</div>
+            <div class="education-institution">GITAM University, Hyderabad</div>
+            <div class="education-duration">2022 - Present</div> 
+          </div>
+          <div class="education-item">
+            <div class="education-degree">Intermediate (12th Grade)</div>
+            <div class="education-institution">SRI CHAITANYA JUNIOR KALASALA, Hyderabad</div>
+            <div class="education-duration">2020 - 2022 | 82.4%</div>
+          </div>
+          <div class="education-item">
+            <div class="education-degree">Secondary School (10th Grade)</div>
+            <div class="education-institution">Bhashyam High School, Hyderabad</div>
+            <div class="education-duration">2017 - 2020 | 70%</div>
+          </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="about-block">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="certification-item">
+            <a href="http://verify.skilljar.com/c/p9kkwdk7wutc" target="_blank" class="certification-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Architecture of the PIC16</span>
+            </a>
+          </div>
+          <div class="certification-item">
+            <a href="https://drive.google.com/file/d/1mY-3vWeDkP2dV0IhcDsWOfLp13xcVhNK/view?usp=sharing" target="_blank" class="certification-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Cisco-CCNA certification</span>
+            </a>
+          </div>
+          <div class="certification-item">
+            <a href="https://drive.google.com/file/d/16eyQZizOp6Q3dHXdRP1uFc_1r1YAGhw5/view?usp=sharing" target="_blank" class="certification-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Cisco-Python Essentials</span>
+            </a>
+          </div>
+          <div class="certification-item">
+            <a href="https://drive.google.com/file/d/1KodtyhiWRmIdby46pjqvAEQ4jiq9AHJF/view?usp=sharing" target="_blank" class="certification-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Cisco-Cybersecurity Essentials</span>
+            </a>
+          </div>
+          <div class="certification-item">
+            <a href="http://verify.skilljar.com/c/hpsbmm262shs" target="_blank" class="certification-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Advanced C Programming</span>
+            </a>
+          </div>
+          <div class="certification-item">
+            <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=c3275a51-9f06-4ded-a674-05af15e53462&" target="_blank" class="certification-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span>MATLAB Onramp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section (Unchanged) -->
+     <section id="skills" class="fade-in-section">
+        <h2><i class="fas fa-brain" style="margin-right: 15px;"></i>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">C</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">Embedded C</div>
+            <div class="skill-tag">Verilog</div>
+            <div class="skill-tag">3D Design</div>
+            <div class="skill-tag">Prompt Engineering</div>
+            <div class="skill-tag">MATLAB</div>
+            <div class="skill-tag">PCB Design</div>
+            <div class="skill-tag">Cadence Virtuoso</div>
+            <div class="skill-tag">Assembly Language</div>
+            <div class="skill-tag">Data Structures</div>
+            <div class="skill-tag">Leadership</div>
+            <div class="skill-tag">Teamwork</div>
+            <div class="skill-tag">Marketing</div>
+            <div class="skill-tag">Public Speaking</div>
+            <div class="skill-tag">Problem Solving</div>
+        </div>
+    </section>
+  
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in-section">
+      <h2><i class="fas fa-tools" style="margin-right: 15px;"></i>My Projects</h2>
+      <div class="project-toggle-container">
+          <div class="project-toggle">
+              <button class="toggle-option active" data-type="hardware"><i class="fas fa-microchip"></i><span>Hardware</span></button>
+              <button class="toggle-option" data-type="software"><i class="fas fa-code"></i><span>Software</span></button>
+          </div>
+      </div>
+
+      <!-- haardware-projects section -->
+       
+      <div class="project-grid hardware-projects">
+        <div class="project-card">
+          <img src="hardware/p1/doorlock.png" alt="RFID Lock">
+          <div class="project-content">
+            <h3>RFID Door Lock</h3>
+            <p class="project-description">Secure access control system with real-time logging and microcontroller integration.</p>
+            <a href="hardware/p1/project1.html" class="view-details">View Details</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="hardware/p2/P22.jpg" alt="Safety Box">
+          <div class="project-content">
+            <h3>Pick & Place Bot</h3>
+            <p class="project-description">Built an robotic vechile with robotic arm for object detection, gripping, and placement tasks.</p>
+            <a href="hardware/p2/project2.html" class="view-details">View Details</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="hardware/p3/sub.png" alt="Pick & Place Bot">
+          <div class="project-content">
+            <h3>AI-Powered Submarine</h3>
+            <p class="project-description">Designing an underwater robot that autonomously monitor with AI</p>
+            <a href="#projects" class="experience-certificate"><i class="fas fa-spinner fa-spin"></i> Ongoing</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Projects Section -->
+
+      <div class="project-grid software-projects" style="display: none;">
+          <div class="project-card">
+          <img src="software/p1/p11.png" alt="E-commerce App">
+          <div class="project-content">
+            <h3>My Portfolio</h3>
+            <p class="project-description">I have developed my personal portfolio website in collaboration with Ai to showcase my projects, experience, and achievements in a professional and creative way.</p>
+            <a href="software/p1/project1.html" class="view-details">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="software/p2/p21.png" alt="E-commerce App">
+          <div class="project-content">
+            <h3>Automatic Gate Unlocking System using Car Number Plate Recognition</h3>
+            <p class="project-description">This Python-based system uses OpenCV and Tesseract OCR to detect and recognize license plates of vehicles in real-time.</p>
+            <a href="software/p2/project2.html" class="view-details">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="software/p3/p31.png" alt="E-commerce App">
+          <div class="project-content">
+            <h3>Library Management System in R</h3>
+            <p class="project-description">This is a simple Library Management System implemented in R that allows you to manage students, books, and checkouts.</p>
+            <a href="software/p3/project3.html" class="view-details">View Details</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="view-more-container">
+        <!-- MODIFIED BUTTON EMOJI -->
+        <a href="projects.html" class="resume-btn">✨ View All Projects</a>
+      </div>
+    </section>
+    
+   <!-- Professional Experience Section (Corrected) -->
+<section id="experience" class="fade-in-section">
+  <h2><i class="fas fa-briefcase" style="margin-right: 15px;"></i>Professional Experience</h2>
+  
+  <!-- Single grid container for all cards -->
+  <div class="experience-grid">
+
+    <!-- Card 1 -->
+    <div class="experience-card">
+      <img src="exp/iiit.jpg" alt="IIIT Hyderabad Internship">
+      <div class="experience-content">
+        <h3>Summer R&D Intern</h3>
+        <p class="experience-company">IIIT Hyderabad-SPCRC | Present</p>
+        <p class="project-description">Working on Low Cost TDS Sensor development, focusing on hardware design and sensor calibration. Collaborated with research team to prototype and testing sensor accuracy.</p>
+        <a href="#experience" class="experience-certificate"><i class="fas fa-spinner fa-spin"></i> Ongoing</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="experience-card">
+      <img src="exp/ibm.png" alt="IBM SkillsBuild Internship">
+      <div class="experience-content">
+        <h3>IBM SkillsBuild 6-Week Internship</h3>
+        <p class="experience-company">IBM-EDUNET | Present</p>
+        <p class="project-description">Working on Low Cost TDS Sensor development, focusing on hardware design and sensor calibration. Collaborated with research team to prototype and testing sensor accuracy.</p>
+        <a href="#experience" class="experience-certificate"><i class="fas fa-spinner fa-spin"></i> Ongoing</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="experience-card">
+      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="Microchip Embedded System Developer Internship">
+      <div class="experience-content">
+        <h3>MICROCHIP EMBEDDED SYSTEM DEVELOPER VIRTUAL INTERNSHIP</h3>
+        <p class="experience-company">AICTE Eduskills Virtual Internship | Jun 2024</p>
+        <p class="project-description">Successfully completed the Eduskills–Microchip Embedded System Developer Virtual Internship, gaining practical experience in embedded C, microcontroller interfacing, MPLAB X IDE, and real-world project development using Microchip devices.</p>
+        <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=83eec7104338be953861ad217f438610" target="_blank" class="experience-certificate"><i class="fas fa-certificate"></i> View Certificate</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="experience-card">
+      <img src="exp/shelledunet.png" alt="Plant Disease Detection System Project">
+      <div class="experience-content">
+        <h3>4-week virtual internship on Artificial Intelligence and Data Analytics focused on Green Skills</h3>
+        <p class="experience-company">Edunet& Shell | January 2025</p>
+        <p class="project-description">During the internship,I have worked on a project titled Plant Disease Detection System for Sustainable Agriculture, which was successfully completed under the guidance of an industry expert. </p>
+        <a href="https://drive.google.com/file/d/1lez--Ez6NpcxVib1ypVBvlr7Q8ESxvJf/view?usp=sharing" target="_blank" class="experience-certificate"><i class="fas fa-certificate"></i> View Certificate</a>
+      </div>
+    </div>
+
+  </div> <!-- End of the single grid container -->
+</section>
+
+    <!-- REDESIGNED Co-Curricular Positions Section -->
+<section id="positions" class="fade-in-section">
+  <h2><i class="fas fa-users-cog" style="margin-right: 15px;"></i>Co-Curricular Positions</h2>
+  
+  <!-- This container should wrap ALL the cards -->
+  <div class="club-leadership-container">
+    
+    <!-- G-ELECTRA Card -->
+    <div class="club-card">
+      <div class="club-header">
+        <div class="club-icon"><i class="fas fa-microchip"></i></div>
+        <div class="club-info">
+          <h4>G-ELECTRA</h4>
+          <span class="club-subtitle">GITAM University Electronics Club</span>
+        </div>
+      </div>
+      <div class="roles-timeline">
+        <div class="timeline-line"></div>
+        <div class="role-item">
+          <div class="role-badge"></div>
+          <div class="role-duration">2024 - Present</div>
+          <div class="role-title">President</div>
+          <p class="role-description">Leading the largest electronics club at GITAM with over 200 members. Organizing technical Fest's,workshops and hackathons.</p>
+        </div>
+        <div class="role-item">
+          <div class="role-badge"></div>
+          <div class="role-duration">2023 - 2024</div>
+          <div class="role-title">Marketing Lead</div>
+          <p class="role-description">Managed club promotions and sponsorships for events.</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- E-CLUB Card -->
+    <div class="club-card">
+      <div class="club-header">
+        <div class="club-icon"><i class="fas fa-lightbulb"></i></div>
+        <div class="club-info">
+          <h4>Entrepreneurs Club (E-CLUB)</h4>
+          <span class="club-subtitle">GITAM University</span>
+        </div>
+      </div>
+      <div class="roles-timeline">
+        <div class="timeline-line"></div>
+        <div class="role-item">
+          <div class="role-badge"></div>
+          <div class="role-duration">2022 - 2023</div>
+          <div class="role-title">Marketing & PR Team</div>
+          <p class="role-description">Promoted entrepreneurial events and startup competitions.</p>
+        </div>
+      </div>
+    </div>
+      
+    <!-- DoEr Card (Now inside the container) -->
+    <div class="club-card">
+      <div class="club-header">
+        <div class="club-icon"><i class="fas fa-network-wired"></i></div>
+        <div class="club-info">
+          <h4>DoEr(GITAM Alumni Relations)</h4>
+          <span class="club-subtitle">GITAM University</span>
+        </div>
+      </div>
+      <div class="roles-timeline">
+        <div class="timeline-line"></div>
+        <div class="role-item">
+          <div class="role-badge"></div>
+          <div class="role-duration">2022 - Present</div>
+          <div class="role-title">Student Co-ordinator</div>
+          <p class="role-description">Facilitating engagement between alumni and current students through events and communication initiatives.</p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- The container now correctly closes after all three cards -->
+</section>
+    <!-- REDESIGNED Accomplishments Section -->
+    <section id="accomplishments" class="fade-in-section">
+      <h2><i class="fas fa-trophy" style="margin-right: 15px;"></i>Accomplishments</h2>
+      <div class="accomplishments-grid">
+        <div class="accomplishment-card">
+          <div class="accomplishment-icon"><i class="fas fa-award"></i></div>
+          <p class="accomplishment-text">Winner of SH124 (Internal Hackathon) - Hardware category</p>
+        </div>
+        <div class="accomplishment-card">
+          <div class="accomplishment-icon"><i class="fas fa-bullhorn"></i></div>
+          <p class="accomplishment-text">SPOT Award winner as Marketing Team Lead in G-ELECTRA</p>
+        </div>
+        <div class="accomplishment-card">
+          <div class="accomplishment-icon"><i class="fas fa-rocket"></i></div>
+          <p class="accomplishment-text">Participated in IIT Kanpur's TECHKRITI'24 & IIT Bombay's TECH FEST</p>
+        </div>
+        <div class="accomplishment-card">
+          <div class="accomplishment-icon"><i class="fas fa-person-booth"></i></div>
+          <p class="accomplishment-text">Webcasting coordinator for 2023 Telangana General Assembly Election</p>
+        </div>
+        <div class="accomplishment-card">
+          <div class="accomplishment-icon"><i class="fas fa-hands-helping"></i></div>
+          <p class="accomplishment-text">NSS Volunteer in 2023 Telangana Election Counting</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Unchanged) -->
+    <section id="contact" class="fade-in-section">
+      <h2><i class="fas fa-envelope-open-text" style="margin-right: 15px;"></i>Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>I'm currently seeking new opportunities and am open to collaborations. Whether you have a question, a proposal, or just want to say hi, my inbox is always open. I'll do my best to get back to you!</p>
+          <div class="contact-socials">
+            <a href="http://linkedin.com/in/saikrishnamotaparthi" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Saikrishnamotaparthi" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:skmotaparthi@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+917995988480" class="social-link" title="Phone"><i class="fas fa-phone-alt"></i></a>
+          </div>
+        </div>
+        
+        <form id="contact-form" action="https://formspree.io/f/mgvypqdw" method="POST" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="resume-btn">Send Message <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sai Krishna Motaparthi | Built with passion & code.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

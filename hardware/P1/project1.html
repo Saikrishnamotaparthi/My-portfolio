@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFID Door Lock | Sai Krishna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <!-- Terminal-style top panel -->
+  <header class="terminal-panel">
+    <div class="terminal-prompt">
+      <span class="prompt-host">Home</span><span class="prompt-path">~/My-Portfolio</span>
+    </div>
+    <nav class="terminal-nav">
+  <a href="../../index.html#about">About</a>
+  <a href="../../index.html#projects">Projects</a>
+  <a href="../../index.html#experience">Experience</a>
+  <a href="../../index.html#positions">Positions</a>
+  <a href="../../index.html#accomplishments">Accomplishments</a>
+  <a href="../../index.html#contact">Contact</a>
+</nav>
+
+    <!-- In projects.html, find and replace this block -->
+<div class="terminal-info">
+  <span class="terminal-time"></span> <!-- REMOVED the old ID -->
+  <a href="../../assets/resume.pdf" download class="download-icon" title="Download Resume">
+    <i class="fas fa-download"></i>
+  </a>
+</div>
+  </header>
+
+  <!-- NEW: Mobile Header -->
+  <div class="mobile-header">
+    <div class="mobile-header-left">
+      ~/My-Portfolio
+    </div>
+    <div class="mobile-header-right">
+      <!-- In the mobile header of projects.html -->
+<span class="terminal-time"></span> <!-- REMOVED the old ID -->
+      <a href="../../assets/resume.pdf" download class="download-icon" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- NEW: Mobile Navigation Menu -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#projects">Projects</a></li>
+      <li><a href="../../index.html#experience">Experience</a></li>
+      <li><a href="../../index.html#positions">Positions</a></li>
+      <li><a href="../../index.html#accomplishments">Accomplishments</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Navigation Menu for this page -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../projects.html">All Projects</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="theme-toggle"><button id="theme-btn">🌙</button></div>
+
+  <!-- ... Rest of your main content for project1.html ... -->
+  <main class="container" style="padding-top: 40px;">
+    <div class="project-detail-hero">
+      <h1>RFID Door Locking System</h1>
+      <div class="tech-stack">
+        <span class="tech-chip">Arduino</span>
+        <span class="tech-chip">RFID RC522</span>
+        <span class="tech-chip">Embedded C</span>
+        <span class="tech-chip">Solenoid Lock</span>
+      </div>
+    </div>
+    
+    <div class="project-detail-layout">
+        <aside class="project-sidebar">
+            <div class="glass-card">
+                <h4><i class="fas fa-info-circle"></i> Project Info</h4>
+                <ul>
+                    <li><i class="fas fa-cogs"></i><strong>Hardware:</strong> Arduino, RFID Module, Solenoid Lock</li>
+                    <li><i class="fas fa-laptop-code"></i><strong>Software:</strong> Embedded C, Arduino IDE</li>
+                    <li><i class="fas fa-shield-alt"></i><strong>Category:</strong> Security, Access Control</li>
+                </ul>
+                <br>
+                <h4><i class="fas fa-link"></i> Project Links</h4>
+                <ul>
+                    <li><a href="https://github.com/Saikrishnamotaparthi/RFID-Door-Locking-System" class="certification-link"><i class="fab fa-github"></i> GitHub Repository</a></li>
+                    <!--<li><a href="#" class="certification-link"><i class="fas fa-file-pdf"></i> Full Report</a></li>-->
+                </ul>
+            </div>
+        </aside>
+        <div class="project-main-content">
+            <div class="glass-card">
+                <h3><i class="fas fa-binoculars"></i> Overview</h3>
+                <p>This project is a secure and cost-effective door access control system using RFID technology. It's designed to grant access only to authorized personnel by scanning a unique RFID tag. The system logs access attempts and provides visual feedback (LEDs) for authorized or denied entries, making it ideal for labs, private offices, or restricted areas.</p>
+                <div class="project-gallery">
+                    <img src="doorlock.png" alt="RFID Door Lock System">
+                    <img src="cir.png" alt="Circuit Detail">
+                </div>
+            </div>
+            <div class="glass-card" style="margin-top: 30px;">
+                <h3><i class="fas fa-chart-line"></i> Challenges & Solutions</h3>
+                <div class="challenge">
+                    <h4>Challenge: Power Consumption</h4>
+                    <p>The solenoid lock and RFID reader consumed significant power, which was a concern for potential battery-powered operation.</p>
+                    <p><strong>Solution:</strong> I implemented a sleep mode for the Arduino microcontroller, waking it only upon an interrupt signal (like a button press or an initial card scan). This optimization reduced idle power consumption by over 40%.</p>
+                </div>
+                <div class="challenge">
+                    <h4>Challenge: False Rejections</h4>
+                    <p>Early tests showed that if a valid card was swiped too quickly, the reader would fail to register it, causing user frustration.</p>
+                    <p><strong>Solution:</strong> A software-based de-bouncing and retry mechanism was added. The system now waits for a stable reading for 100ms and includes a feedback LED to guide users on the correct card placement and timing.</p>
+                </div>
+            </div>
+             <div class="project-actions">
+                <a href="../../projects.html" class="resume-btn secondary">
+                    <i class="fas fa-arrow-left btn-icon"></i> Back to All Projects
+                </a>
+             </div>
+        </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2025 Sai Krishna Motaparthi | Built with passion & code.</p>
+  </footer>
+
+  <!-- Link to the correct script for sub-pages -->
+  <script src="../../js/projects.js"></script>
+</body>
+</html>
