@@ -782,3 +782,24 @@ footer { text-align: center; width: 100%; padding: 40px 20px 20px; margin-top: 4
     white-space: normal !important;
   }
 }
+
+@media (max-width: 900px) {
+  h2, h3, h4 {
+    font-size: 1.3rem !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    display: block !important;
+    flex-wrap: wrap !important;
+  }
+  h2 i, h3 i, h4 i {
+    margin-right: 8px !important;
+    font-size: 1.2em !important;
+    vertical-align: middle !important;
+  }
+}
