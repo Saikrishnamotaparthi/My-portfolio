@@ -803,3 +803,30 @@ footer { text-align: center; width: 100%; padding: 40px 20px 20px; margin-top: 4
     vertical-align: middle !important;
   }
 }
+
+/* --- Fix heading wrapping on mobile --- */
+@media (max-width: 600px) {
+  h2, h3, h4 {
+    font-size: 1.1rem !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    display: inline-block !important;   /* Remove flex on mobile */
+    width: 100% !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  h2 i, h3 i, h4 i {
+    display: inline-block !important;
+    font-size: 1.3em !important;
+    margin-right: 8px !important;
+    vertical-align: middle !important;
+  }
+  h2::before,
+  h2::after {
+    display: none !important; /* Remove the decorative lines on small screens */
+  }
+}
