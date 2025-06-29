@@ -757,3 +757,28 @@ footer { text-align: center; width: 100%; padding: 40px 20px 20px; margin-top: 4
     margin-bottom: 30px;
   }
 }
+@media (max-width: 900px) {
+  section {
+    padding: 30px 10px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  section, .project-card, .experience-card, .club-card {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Make headings wrap and not overflow */
+@media (max-width: 900px) {
+  h2, h3, h4 {
+    word-break: break-word;
+    font-size: 1.4rem !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    white-space: normal !important;
+  }
+}
